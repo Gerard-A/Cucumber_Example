@@ -12,7 +12,7 @@ This Cucumber-JVM example shows the following Gherkin features:
 
 ### CheckLocation.feature
 This feature contains Gherkin Scenarios and Scenario Outlines and is compatible with other test frameworks that implement the Gherkin syntax.
-For example Cucumber and SpecFlow. See https://github.com/Gerard-A/SpecFlow_Example for a SpecFlow C# project, and https://github.com/Gerard-A/Behave_example for a Python Behave project that use the same feature file.
+For example Cucumber and SpecFlow. See https://github.com/Gerard-A/SpecFlow_Example for a SpecFlow C# project, and https://github.com/Gerard-A/Behave_example for a Python Behave project, that use the same feature file.
 
 ## Test execution
 
