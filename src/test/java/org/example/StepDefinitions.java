@@ -17,21 +17,21 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class StepDefinitions implements En {
 
     private static final String BASE_URL = "https://api.zippopotam.us";
-    private String country;
-    private String zipCode;
+    private static String country;
+    private static String zipCode;
     private static Response response;
     private static String jsonString;
 
     public StepDefinitions() {
         Given("the country code {string} and zip code {string}", (String country, String zipCode) -> {
-            this.country = country;
-            this.zipCode = zipCode;
+            StepDefinitions.country = country;
+            StepDefinitions.zipCode = zipCode;
         });
 
         When("I request the locations corresponding to these codes", () -> {
             RestAssured.baseURI = BASE_URL;
             RequestSpecification request = RestAssured.given();
-            response = request.get("/" + this.country + "/" + this.zipCode);
+            response = request.get("/" + country + "/" + zipCode);
             jsonString = response.asString();
 
         });
